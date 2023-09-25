@@ -1,0 +1,76 @@
+/* styles.css */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mooli&display=swap');
+
+/* Global styles */
+:root {
+  --color-bg: #132F2b;
+  --color-primary: #8ae2e2;
+  --color-bg-variant: #8fd3bc;
+  --color-primary-variant: rgba(247, 235, 238, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(252, 239, 239, 0.6);
+
+  --contianer-width-lg: 75%;
+  --contianer-width-md: 86%;
+  --contianer-width-sm: 90%;
+
+  --transition: all 400ms ease;
+}
+
+
+
+body {
+  
+font-family: 'Mooli', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Page header styles */
+  h1 {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  /* Section styles */
+  section {
+    margin: 2rem;
+  }
+  
+  /* Event card styles */
+  .event-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .event-card h3 {
+    margin-top: 0;
+  }
+  
+  /* Artist's portfolio styles */
+  .artist-portfolio {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border: 1px solid #ddd;
+  }
+  
+  .artwork-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .artwork-item {
+    flex-basis: calc(33.33% - 1rem);
+    margin-bottom: 1rem;
+  }
+  
+  .artwork-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
