@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mooli&display=swap');
+
+/* Global styles */
+:root {
+  --color-bg: #458ca1;
+  --color-primary: #8ae2e2;
+  --color-bg-variant: #509ddb;
+  --color-primary-variant: rgba(247, 235, 238, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(10, 10, 10, 0.6);
+
+  --contianer-width-lg: 75%;
+  --contianer-width-md: 86%;
+  --contianer-width-sm: 90%;
+
+  --transition: all 400ms ease;
+}
+
+body {
+
+  font-family: 'Mooli', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  text-decoration: none;
+}
+
+/* Page header styles */
+h1 {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* Section styles */
+section {
+  margin: 2rem;
+}
+
+
+.event-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.event-card h3 {
+  margin-top: 0;
+}
+
+
+.artist-portfolio {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.artwork-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.artwork-item {
+  flex-basis: calc(33.33% - 1rem);
+  margin-bottom: 1rem;
+}
+
+.artwork-item img {
+  max-width: 100%;
+  height: auto;
+}
