@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #eff0b4;
     margin: 0;
     padding: 0;
   }
@@ -55,23 +55,23 @@ body {
   .event-list {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #fcf9f9;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .event-item {
-    border: 1px solid #ccc;
+    border: 1px solid #110f0f;
     border-radius: 5px;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #e5b9b9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .event-item h3 {
-    color: #007bff;
+    color: #070707;
     margin-top: 0;
 }
 

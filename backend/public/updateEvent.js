@@ -1,15 +1,12 @@
-
 document.addEventListener("DOMContentLoaded", () => {
-  
   const urlParams = new URLSearchParams(window.location.search);
   const eventId = urlParams.get("id");
 
-  
   const updateEventForm = document.getElementById("updateEventForm");
   updateEventForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    // Retrieve 
+    // Retrieve updated event data from the form
     const formData = new FormData(updateEventForm);
     const updatedEventData = {};
 
@@ -17,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       updatedEventData[key] = value;
     });
 
-    // request 
+    // Send a PUT request to update the event
     try {
       const response = await fetch(`/events/${eventId}`, {
         method: "PUT",
@@ -31,13 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
         throw new Error("Error updating event");
       }
 
+      // Redirect to the event details page after updating
       window.location.href = `/index.html?id=${eventId}`;
     } catch (error) {
       console.error("Error updating event:", error);
     }
   });
 
-  // Fetch 
+  // Fetch event details and prepopulate form fields
   async function fetchEventDetails() {
     try {
       const response = await fetch(`/events/${eventId}`);
@@ -46,12 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       const eventDetails = await response.json();
 
+      // Prepopulate form fields
       document.getElementById("eventName").value = eventDetails.name;
-      document.getElementById("eventDate").value = eventDetails.date;
+      document.getElementById("eventDate").value = eventDetails.date; // Prepopulate the date field
       document.getElementById("eventTime").value = eventDetails.time;
       document.getElementById("eventLocation").value = eventDetails.location;
-      document.getElementById("eventDescription").value =
-        eventDetails.description;
+      document.getElementById("eventDescription").value = eventDetails.description;
     } catch (error) {
       console.error("Error fetching event details:", error);
     }

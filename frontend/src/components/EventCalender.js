@@ -40,6 +40,7 @@ function EventCalender() {
     }, []);
 
     return (
+        <section id='event'>
         <div className="event-calendar">
             <h2>Upcomming Events</h2>
             <ul className="event-list">
@@ -62,6 +63,7 @@ function EventCalender() {
                 })}
             </ul>
         </div>
+        </section>
     );
 }
 
