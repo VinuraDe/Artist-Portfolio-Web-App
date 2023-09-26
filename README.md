@@ -6,12 +6,12 @@ Coding Exam: Artist Portfolio Web App
 
 Backend 
 In the project directory, you can run:
-npm start
+"npm start"
 Runs the app in development mode.
 Open http://localhost:5000/ to view the Event Management Portal it in your browser.
 
 Frontend
-npm start
+"npm start"
 Runs the app in development mode.
 Open http://localhost:3000/ to view the Artist Portfolio it in your browser.
 
