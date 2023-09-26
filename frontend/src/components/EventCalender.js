@@ -53,7 +53,7 @@ function EventCalender() {
                         <li key={event._id} className="event-item">
                             <h3 className="event-name">{addOrdinalSuffix(day)}</h3>
                             <p className="event-detail"> {monthToWord(month)}</p>
-                            <p className="event-detail">{event.name}</p> 
+                            <p className="event-detail">Name: {event.name}</p> 
                             <p className="event-detail">Time: {time}</p> {/* Display time as AM or PM */}
                             <p className="event-detail">Location: {event.location}</p>
                             <p className="event-detail">Description: {event.description}</p>
